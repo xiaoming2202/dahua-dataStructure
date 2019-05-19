@@ -6,7 +6,8 @@ import my.list.LList;
 
 /*
  * @author guanzheming
- * 
+ * @date 2019.05.16
+ * 线性表下标的范围是0-长度-1
  * */
 public class SeqList<T> implements LList<T> {
 
@@ -29,7 +30,7 @@ public class SeqList<T> implements LList<T> {
 
 	@Override
 	public T get(int index) {
-		rangeCheckForAdd(index);
+		rangeCheckforGet(index);
 		return (T) elementData[index];// 强制转换
 	}
 
@@ -40,7 +41,7 @@ public class SeqList<T> implements LList<T> {
 
 	@Override
 	public void insert(int i, T element) {
-		rangeCheckForAdd(i);
+		rangeCheckforAdd(i);
 		if (elementData.length==this.length()) {// 数组满了
 			Object[] temp = this.elementData;
 			this.elementData = new Object[elementData.length * 2];
@@ -56,14 +57,17 @@ public class SeqList<T> implements LList<T> {
 		this.length++;
 	}
 
-	private void rangeCheckForAdd(int index) {
+	private void rangeCheckforAdd(int index) {
 		if (index > length || index < 0)
 			throw new IndexOutOfBoundsException("size:" + length + "index: " + index);
 	}
-
+	private void rangeCheckforGet(int index) {
+		if (index >=length || index < 0)
+			throw new IndexOutOfBoundsException("size:" + length + "index: " + index);
+	}
 	@Override
 	public T delete(int i) {
-		rangeCheckForAdd(i);
+		rangeCheckforGet(i);
 		T Oldvalue = (T) elementData[i];
 		for (int j = i; j < elementData.length - 1; j++) {
 			elementData[j] = elementData[j + 1];

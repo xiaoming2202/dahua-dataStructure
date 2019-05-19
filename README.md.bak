@@ -1,4 +1,4 @@
 # dahua-dataStructure
 大话数据结构代码java实现2019.05</br>
 说是java代码实现，其实是根据java的源码改造实现原有的数据结构及功能。</br>
-由于demo使用java书写，因此我更多参考的是java的源码实现，比如ArrayList、LinkedList等等。
+由于使用java我更多参考的是java的源码实现，比如ArrayList、LinkedList等等

@@ -6,7 +6,10 @@ import java.util.ArrayList;
 
 import org.junit.Before;
 import org.junit.jupiter.api.Test;
-
+/*
+ * @author guanzheming
+ * @date 2019.05.17
+ * */
 class SeqListTest {
 
 	private <T> void print(SeqList<T> list) {
