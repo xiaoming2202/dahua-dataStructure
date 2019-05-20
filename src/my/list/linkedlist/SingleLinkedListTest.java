@@ -3,6 +3,10 @@ package my.list.linkedlist;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
+/*
+ * @author guanzheming
+ * @date 2019.05.20
+ * */
 
 class SingleLinkedListTest {
 
