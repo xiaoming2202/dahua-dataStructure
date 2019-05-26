@@ -4,7 +4,7 @@ import my.list.LList;
 
 /*
  * @author guanzheming
- * @date 2019.05.22
+ * @date 2019.05.26
  * 双向链表简单的实现一下结构，不打算具体实现功能
  * */
 public class DoubleLinkedList implements LList{
